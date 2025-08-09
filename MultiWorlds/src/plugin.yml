@@ -1,0 +1,10 @@
+name: RTPPlugin
+main: me.elite.rtpplugin.RTPPlugin
+version: 1.0
+api-version: 1.16
+depend: [Factions]
+commands:
+  rtp:
+    description: Open world teleport UI
+  wild:
+    description: Open world teleport UI
