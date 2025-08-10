@@ -9,7 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd226a0-b6e5-4347-a97a-da5bc89fb652" name="Changes" comment="" />
+    <list default="true" id="9fd226a0-b6e5-4347-a97a-da5bc89fb652" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/WorldInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/.idea/artifacts/MultiWorlds_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/.idea/artifacts/MultiWorlds_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/.idea/libraries/FactionsPlugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/.idea/libraries/spigot_1_16_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/MultiWorlds.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/MultiWorlds.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/RTPPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/RTPPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/plugin.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,10 +35,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="30u8RCevCWPLnysc7MKqCTjw1Km" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,9 +64,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,7 +92,8 @@
       <workItem from="1754505961319" duration="4210000" />
       <workItem from="1754587465553" duration="597000" />
       <workItem from="1754775092062" duration="2308000" />
-      <workItem from="1754802599147" duration="748000" />
+      <workItem from="1754802599147" duration="1042000" />
+      <workItem from="1754815055991" duration="1777000" />
     </task>
     <servers />
   </component>

@@ -17,7 +17,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.Location;
 
-import java.util.Random;
+import java.util.*;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
@@ -26,15 +26,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 
 import java.lang.reflect.Field;
-import java.util.UUID;
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
 
 
 public class RTPPlugin extends JavaPlugin implements CommandExecutor {
 
     private FactionsPlugin factionsPlugin;
+    public Map<String, WorldInfo> worlds = new HashMap<>();
 
     @Override
     public void onEnable() {
@@ -43,6 +40,31 @@ public class RTPPlugin extends JavaPlugin implements CommandExecutor {
         if (factionsPlugin == null) {
             getLogger().warning("Factions plugin not found! Corner claims will not be displayed.");
         }
+
+        worlds.put("world", new WorldInfo(
+                "world",
+                "§e§l☀ §a§lEarth §e§l☀",
+                "Overworld",
+                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUwMTU0NzBlMjg2ZTRlZDc3YTAzODc2Y2JiZmQ3YjNkMzU4YTYwNjA2YjQ0NmQyYzRiYzhkOGU5YzM3M2VlOSJ9fX0="
+                ));
+        worlds.put("world2", new WorldInfo(
+                "world2",
+                "§4§l\uD83D\uDD25 F§c§lire P§6§llanet \uD83D\uDD25",
+                "Overworld",
+                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ4NTlmN2IzY2RmZGFkNDcxODI4ODRlMTI3ZjQ2MWZlOGY5ZmM1MmY3ZDE1MDQyN2MxMTcwNzliMDkyNGUzIn19fQ=="
+                ));
+        worlds.put("world_nether", new WorldInfo(
+                "world_nether",
+                "§4§l☠ Hell ☠",
+                "Nether",
+                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdlMGJmNjI3NTg4MjZhNzc2ODA4YzFkNzViNmM2MGY3MjAzZjA4YTk2ODE0NDgzZmMwZDhkYzBjNTMyZTBjNSJ9fX0="
+                ));
+        worlds.put("world_the_end", new WorldInfo(
+                "world_the_end",
+                "§d§l\uD83D\uDDE1 §5§lEnd §d§l\uD83D\uDDE1",
+                "The End",
+                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzZjYWM1OWIyYWFlNDg5YWEwNjg3YjVkODAyYjI1NTVlYjE0YTQwYmQ2MmIyMWViMTE2ZmE1NjljZGI3NTYifX19"
+                ));
 
         getCommand("rtp").setExecutor(this);
         getCommand("wild").setExecutor(this);
@@ -65,33 +87,41 @@ public class RTPPlugin extends JavaPlugin implements CommandExecutor {
             gui.setItem(i, filler);
         }
 
+        WorldInfo world1 = worlds.get("world");
+
         // Create world items with corner claim information
         gui.setItem(1, createWorldItem(
-                "§e§l☀ §a§lEarth §e§l☀",
-                "world",
-                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUwMTU0NzBlMjg2ZTRlZDc3YTAzODc2Y2JiZmQ3YjNkMzU4YTYwNjA2YjQ0NmQyYzRiYzhkOGU5YzM3M2VlOSJ9fX0=",
-                "Overworld"
+                world1.getDisplayName(),
+                world1.getWorldName(),
+                world1.getSkullId(),
+                world1.getWorldType()
         ));
+
+        WorldInfo world2 = worlds.get("world2");
 
         gui.setItem(3, createWorldItem(
-                "§4§l\uD83D\uDD25 F§c§lire P§6§llanet \uD83D\uDD25",
-                "world2",
-                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ4NTlmN2IzY2RmZGFkNDcxODI4ODRlMTI3ZjQ2MWZlOGY5ZmM1MmY3ZDE1MDQyN2MxMTcwNzliMDkyNGUzIn19fQ==",
-                "Overworld"
+                world2.getDisplayName(),
+                world2.getWorldName(),
+                world2.getSkullId(),
+                world2.getWorldType()
         ));
+
+        WorldInfo worldNether = worlds.get("world_nether");
 
         gui.setItem(5, createWorldItem(
-                "§4§l☠ Hell ☠",
-                "world_nether",
-                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdlMGJmNjI3NTg4MjZhNzc2ODA4YzFkNzViNmM2MGY3MjAzZjA4YTk2ODE0NDgzZmMwZDhkYzBjNTMyZTBjNSJ9fX0=",
-                "Nether"
+                worldNether.getDisplayName(),
+                worldNether.getWorldName(),
+                worldNether.getSkullId(),
+                worldNether.getWorldType()
         ));
 
+        WorldInfo worldEnd = worlds.get("world_the_end");
+
         gui.setItem(7, createWorldItem(
-                "§d§l\uD83D\uDDE1 §5§lEnd §d§l\uD83D\uDDE1",
-                "world_the_end",
-                "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzZjYWM1OWIyYWFlNDg5YWEwNjg3YjVkODAyYjI1NTVlYjE0YTQwYmQ2MmIyMWViMTE2ZmE1NjljZGI3NTYifX19",
-                "The End"
+                worldEnd.getDisplayName(),
+                worldEnd.getWorldName(),
+                worldEnd.getSkullId(),
+                worldEnd.getWorldType()
         ));
 
         player.openInventory(gui);

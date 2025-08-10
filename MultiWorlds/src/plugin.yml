@@ -1,7 +1,8 @@
-name: RTPPlugin
+name: MultiWorlds
 main: me.elite.rtpplugin.RTPPlugin
 version: 1.0
 api-version: 1.16
+author: WedrownyElite
 depend: [Factions]
 commands:
   rtp:
