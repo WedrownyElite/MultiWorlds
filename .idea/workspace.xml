@@ -10,15 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fd226a0-b6e5-4347-a97a-da5bc89fb652" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/WorldInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiWorlds.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiWorlds/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MultiWorlds_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MultiWorlds_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Factions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/.idea/artifacts/MultiWorlds_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/.idea/artifacts/MultiWorlds_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/.idea/libraries/FactionsPlugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/.idea/libraries/spigot_1_16_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/MultiWorlds.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/MultiWorlds.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/RTPPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/RTPPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/RTPListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/RTPPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/me/elite/rtpplugin/WorldInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,28 +52,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "C++",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Coding/MinecraftServers/CustomPlugins/MultiWorlds",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;C++&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Coding/MinecraftServers/CustomPlugins/MultiWorlds&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding\MinecraftServers\CustomPlugins\MultiWorlds\MultiWorlds\src\main\resources" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,6 +103,8 @@
       <workItem from="1754775092062" duration="2308000" />
       <workItem from="1754802599147" duration="1042000" />
       <workItem from="1754815055991" duration="1777000" />
+      <workItem from="1754977796959" duration="1071000" />
+      <workItem from="1754980584275" duration="139000" />
     </task>
     <servers />
   </component>

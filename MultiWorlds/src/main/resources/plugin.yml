@@ -3,7 +3,7 @@ main: me.elite.rtpplugin.RTPPlugin
 version: 1.0
 api-version: 1.16
 author: WedrownyElite
-depend: [Factions]
+depend: [EclipseFactions]
 commands:
   rtp:
     description: Open world teleport UI
