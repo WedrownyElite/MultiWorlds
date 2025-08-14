@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd226a0-b6e5-4347-a97a-da5bc89fb652" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiWorlds/src/main/java/me/elite/rtpplugin/WorldConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/main/java/me/elite/rtpplugin/RTPListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/main/java/me/elite/rtpplugin/RTPListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/main/java/me/elite/rtpplugin/RTPPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/main/java/me/elite/rtpplugin/RTPPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiWorlds/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiWorlds/src/main/resources/plugin.yml" afterDir="false" />
-    </list>
+    <list default="true" id="9fd226a0-b6e5-4347-a97a-da5bc89fb652" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +93,7 @@
       <workItem from="1754977796959" duration="1071000" />
       <workItem from="1754980584275" duration="139000" />
       <workItem from="1755064024917" duration="2353000" />
-      <workItem from="1755066539032" duration="2211000" />
+      <workItem from="1755066539032" duration="2394000" />
     </task>
     <servers />
   </component>
